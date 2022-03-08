@@ -8,9 +8,9 @@
     "clean": "rimraf target target-cucumber target-mocha",
     "test": "failsafe clean test:cucumber:execute test:cucumber:report test:mocha:execute test:mocha:report",
     "test:cucumber:execute": "wdio config/wdio.cucumber.ts",
-    "test:cucumber:report": "serenity-bdd run --features ./features --source target-cucumber/site/serenity --destination target-cucumber/site/serenity --artifact net.serenity-bdd:serenity-cli:jar:3.2.0",
+    "test:cucumber:report": "serenity-bdd run --features ./features --source target-cucumber/site/serenity --destination target-cucumber/site/serenity --shortFilenames false --artifact net.serenity-bdd:serenity-cli:jar:3.2.0",
     "test:mocha:execute": "wdio config/wdio.mocha.ts",
-    "test:mocha:report": "serenity-bdd run --source target-mocha/site/serenity --destination target-mocha/site/serenity --artifact net.serenity-bdd:serenity-cli:jar:3.2.0",
+    "test:mocha:report": "serenity-bdd run --source target-mocha/site/serenity --destination target-mocha/site/serenity --shortFilenames false --artifact net.serenity-bdd:serenity-cli:jar:3.2.0",
     "lint": "eslint --ext ts --config .eslintrc.js .",
     "lint:fix": "npm run lint -- --fix"
   },

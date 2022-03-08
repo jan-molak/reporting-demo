@@ -8,7 +8,7 @@ to get started with acceptance testing your web applications using [Serenity/JS]
 [Cucumber](https://github.com/cucumber/cucumber-js) and [WebdriverIO](https://webdriver.io/).
 
 Learn more:
-- [Serenity BDD reports for this project](https://serenity-js.github.io/serenity-js-cucumber-webdriverio-template/)
+- [Serenity BDD reports for this project](https://jan-molak.github.io/reporting-demo/)
 - [Serenity/JS Website](https://serenity-js.org)
 - [Serenity/JS Tutorial](https://serenity-js.org/handbook/thinking-in-serenity-js/index.html)
 - [Serenity/JS API Docs](https://serenity-js.org/modules)
