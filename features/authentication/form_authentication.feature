@@ -1,4 +1,4 @@
-Feature: Form-Based Authentication
+Feature: Form-Based Authentication with Cucumber
 
   In order to learn how to use Serenity/JS with Cucumber and WebdriverIO
   As a Curious Developer
