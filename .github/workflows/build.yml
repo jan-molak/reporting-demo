@@ -33,5 +33,5 @@ jobs:
         if: matrix.node-version == '16.x' && github.ref == 'refs/heads/master'
         with:
           BRANCH: gh-pages
-          FOLDER: target/site/serenity
+          FOLDER: target-cucumber/site/serenity
           CLEAN: true

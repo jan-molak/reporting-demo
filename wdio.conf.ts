@@ -3,7 +3,8 @@ import isCI = require('is-ci');
 import { ConsoleReporter } from '@serenity-js/console-reporter';
 import { ArtifactArchiver } from '@serenity-js/core';
 import { SerenityBDDReporter } from '@serenity-js/serenity-bdd';
-import { Photographer, TakePhotosOfInteractions, WebdriverIOConfig } from '@serenity-js/webdriverio';
+import { Photographer, TakePhotosOfInteractions } from '@serenity-js/web';
+import { WebdriverIOConfig } from '@serenity-js/webdriverio';
 
 import { Actors } from './test';
 
@@ -81,7 +82,7 @@ export const config: WebdriverIOConfig = {
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
     capabilities: [{
-    
+
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
@@ -185,11 +186,9 @@ export const config: WebdriverIOConfig = {
         // <string[] | string> (expression) only execute the features or scenarios with tags matching the expression
         tags: [],
         // <number> timeout for step definitions
-        timeout: 60000,
-        // <boolean> Fail if there are any undefined or pending steps.
-        strict: false
+        timeout: 60_000,
     },
-    
+
     //
     // =====
     // Hooks
@@ -296,7 +295,7 @@ export const config: WebdriverIOConfig = {
      */
     // afterFeature: function (uri, feature) {
     // },
-    
+
     /**
      * Runs after a WebdriverIO command gets executed
      * @param {String} commandName hook command name
