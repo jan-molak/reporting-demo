@@ -1,5 +1,6 @@
-import { config } from './wdio.common';
 import { ArtifactArchiver } from '@serenity-js/core';
+
+import { config } from './wdio.common';
 
 config.specs = [
     './spec/**/*.spec.ts',

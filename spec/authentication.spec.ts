@@ -1,8 +1,10 @@
 import 'mocha';
+
 import { actorCalled } from '@serenity-js/core';
 import { Navigate } from '@serenity-js/web';
-import { PickExample } from '../test/examples';
+
 import { Authenticate, VerifyAuthentication } from '../test/authentication';
+import { PickExample } from '../test/examples';
 
 describe('Form-Based Authentication with Mocha', () => {
 
